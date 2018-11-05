@@ -1,0 +1,982 @@
+2018-11-05 04:20:27 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-05 04:20:27 INFO  SparkContext:54 - Running Spark version 2.3.2
+2018-11-05 04:20:27 INFO  SparkContext:54 - Submitted application: JavaWordCount
+2018-11-05 04:20:27 INFO  SecurityManager:54 - Changing view acls to: spark,hadoop
+2018-11-05 04:20:27 INFO  SecurityManager:54 - Changing modify acls to: spark,hadoop
+2018-11-05 04:20:27 INFO  SecurityManager:54 - Changing view acls groups to: 
+2018-11-05 04:20:27 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2018-11-05 04:20:27 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(spark, hadoop); groups with modify permissions: Set()
+2018-11-05 04:20:27 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 38985.
+2018-11-05 04:20:27 INFO  SparkEnv:54 - Registering MapOutputTracker
+2018-11-05 04:20:27 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2018-11-05 04:20:27 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2018-11-05 04:20:27 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2018-11-05 04:20:27 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-4fe72c8e-a607-4bae-9ac4-09fd3165f4e1
+2018-11-05 04:20:27 INFO  MemoryStore:54 - MemoryStore started with capacity 413.9 MB
+2018-11-05 04:20:28 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2018-11-05 04:20:28 INFO  log:192 - Logging initialized @3234ms
+2018-11-05 04:20:28 INFO  Server:351 - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2018-11-05 04:20:28 INFO  Server:419 - Started @3436ms
+2018-11-05 04:20:28 INFO  AbstractConnector:278 - Started ServerConnector@4c9c96c8{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-11-05 04:20:28 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1af7f54a{/jobs,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@751e664e{/jobs/json,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@160c3ec1{/jobs/job,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4d0402b{/jobs/job/json,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2fa7ae9{/stages,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7577b641{/stages/json,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3704122f{/stages/stage,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@28a2a3e7{/stages/stage/json,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3f2049b6{/stages/pool,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@10b3df93{/stages/pool/json,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@ea27e34{/storage,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@33a2499c{/storage/json,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@e72dba7{/storage/rdd,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@33c2bd{/storage/rdd/json,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1dfd5f51{/environment,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3c321bdb{/environment/json,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@24855019{/executors,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3abd581e{/executors/json,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4d4d8fcf{/executors/threadDump,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@610db97e{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6f0628de{/static,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@42deb43a{/,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1deb2c43{/api,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6f6a7463{/jobs/job/kill,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1bdaa23d{/stages/stage/kill,null,AVAILABLE,@Spark}
+2018-11-05 04:20:28 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://ip-10-1-1-100.ec2.internal:4040
+2018-11-05 04:20:28 INFO  SparkContext:54 - Added JAR file:/opt/spark/examples/jars/spark-examples_2.11-2.3.2.jar at spark://ip-10-1-1-100.ec2.internal:38985/jars/spark-examples_2.11-2.3.2.jar with timestamp 1541391628891
+2018-11-05 04:20:30 INFO  RMProxy:98 - Connecting to ResourceManager at ip-10-1-1-100.ec2.internal/10.1.1.100:8032
+2018-11-05 04:20:30 INFO  Client:54 - Requesting a new application from cluster with 10 NodeManagers
+2018-11-05 04:20:31 INFO  Client:54 - Verifying our application has not requested more than the maximum memory capability of the cluster (1536 MB per container)
+2018-11-05 04:20:31 INFO  Client:54 - Will allocate AM container, with 896 MB memory including 384 MB overhead
+2018-11-05 04:20:31 INFO  Client:54 - Setting up container launch context for our AM
+2018-11-05 04:20:31 INFO  Client:54 - Setting up the launch environment for our AM container
+2018-11-05 04:20:31 INFO  Client:54 - Preparing resources for our AM container
+2018-11-05 04:20:33 WARN  Client:66 - Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+2018-11-05 04:20:35 INFO  Client:54 - Uploading resource file:/tmp/spark-871450ad-96e1-4c68-a76c-c15baf6d3787/__spark_libs__7376284289490328745.zip -> hdfs://ip-10-1-1-100.ec2.internal:9000/user/hadoop/.sparkStaging/application_1541390877897_0018/__spark_libs__7376284289490328745.zip
+2018-11-05 04:20:39 INFO  Client:54 - Uploading resource file:/tmp/spark-871450ad-96e1-4c68-a76c-c15baf6d3787/__spark_conf__1732026234265936572.zip -> hdfs://ip-10-1-1-100.ec2.internal:9000/user/hadoop/.sparkStaging/application_1541390877897_0018/__spark_conf__.zip
+2018-11-05 04:20:39 INFO  SecurityManager:54 - Changing view acls to: spark,hadoop
+2018-11-05 04:20:39 INFO  SecurityManager:54 - Changing modify acls to: spark,hadoop
+2018-11-05 04:20:39 INFO  SecurityManager:54 - Changing view acls groups to: 
+2018-11-05 04:20:39 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2018-11-05 04:20:39 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(spark, hadoop); groups with modify permissions: Set()
+2018-11-05 04:20:39 INFO  Client:54 - Submitting application application_1541390877897_0018 to ResourceManager
+2018-11-05 04:20:39 INFO  YarnClientImpl:273 - Submitted application application_1541390877897_0018
+2018-11-05 04:20:39 INFO  SchedulerExtensionServices:54 - Starting Yarn extension services with app application_1541390877897_0018 and attemptId None
+2018-11-05 04:20:40 INFO  Client:54 - Application report for application_1541390877897_0018 (state: ACCEPTED)
+2018-11-05 04:20:40 INFO  Client:54 - 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: root.hadoop
+	 start time: 1541391639544
+	 final status: UNDEFINED
+	 tracking URL: http://ip-10-1-1-100.ec2.internal:8088/proxy/application_1541390877897_0018/
+	 user: hadoop
+2018-11-05 04:20:41 INFO  Client:54 - Application report for application_1541390877897_0018 (state: ACCEPTED)
+2018-11-05 04:20:42 INFO  Client:54 - Application report for application_1541390877897_0018 (state: ACCEPTED)
+2018-11-05 04:20:43 INFO  Client:54 - Application report for application_1541390877897_0018 (state: ACCEPTED)
+2018-11-05 04:20:44 INFO  Client:54 - Application report for application_1541390877897_0018 (state: ACCEPTED)
+2018-11-05 04:20:45 INFO  Client:54 - Application report for application_1541390877897_0018 (state: ACCEPTED)
+2018-11-05 04:20:46 INFO  Client:54 - Application report for application_1541390877897_0018 (state: ACCEPTED)
+2018-11-05 04:20:47 INFO  Client:54 - Application report for application_1541390877897_0018 (state: ACCEPTED)
+2018-11-05 04:20:48 INFO  YarnClientSchedulerBackend:54 - Add WebUI Filter. org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter, Map(PROXY_HOSTS -> ip-10-1-1-100.ec2.internal, PROXY_URI_BASES -> http://ip-10-1-1-100.ec2.internal:8088/proxy/application_1541390877897_0018), /proxy/application_1541390877897_0018
+2018-11-05 04:20:48 INFO  Client:54 - Application report for application_1541390877897_0018 (state: ACCEPTED)
+2018-11-05 04:20:48 INFO  JettyUtils:54 - Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /jobs, /jobs/json, /jobs/job, /jobs/job/json, /stages, /stages/json, /stages/stage, /stages/stage/json, /stages/pool, /stages/pool/json, /storage, /storage/json, /storage/rdd, /storage/rdd/json, /environment, /environment/json, /executors, /executors/json, /executors/threadDump, /executors/threadDump/json, /static, /, /api, /jobs/job/kill, /stages/stage/kill.
+2018-11-05 04:20:48 INFO  YarnSchedulerBackend$YarnSchedulerEndpoint:54 - ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+2018-11-05 04:20:49 INFO  Client:54 - Application report for application_1541390877897_0018 (state: RUNNING)
+2018-11-05 04:20:49 INFO  Client:54 - 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.1.1.17
+	 ApplicationMaster RPC port: 0
+	 queue: root.hadoop
+	 start time: 1541391639544
+	 final status: UNDEFINED
+	 tracking URL: http://ip-10-1-1-100.ec2.internal:8088/proxy/application_1541390877897_0018/
+	 user: hadoop
+2018-11-05 04:20:49 INFO  YarnClientSchedulerBackend:54 - Application application_1541390877897_0018 has started running.
+2018-11-05 04:20:49 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41335.
+2018-11-05 04:20:49 INFO  NettyBlockTransferService:54 - Server created on ip-10-1-1-100.ec2.internal:41335
+2018-11-05 04:20:49 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2018-11-05 04:20:49 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, ip-10-1-1-100.ec2.internal, 41335, None)
+2018-11-05 04:20:49 INFO  BlockManagerMasterEndpoint:54 - Registering block manager ip-10-1-1-100.ec2.internal:41335 with 413.9 MB RAM, BlockManagerId(driver, ip-10-1-1-100.ec2.internal, 41335, None)
+2018-11-05 04:20:49 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, ip-10-1-1-100.ec2.internal, 41335, None)
+2018-11-05 04:20:49 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, ip-10-1-1-100.ec2.internal, 41335, None)
+2018-11-05 04:20:50 INFO  JettyUtils:54 - Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /metrics/json.
+2018-11-05 04:20:50 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@689faf79{/metrics/json,null,AVAILABLE,@Spark}
+2018-11-05 04:20:56 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.1.12:44606) with ID 1
+2018-11-05 04:20:56 INFO  BlockManagerMasterEndpoint:54 - Registering block manager ip-10-1-1-12.ec2.internal:38623 with 413.9 MB RAM, BlockManagerId(1, ip-10-1-1-12.ec2.internal, 38623, None)
+2018-11-05 04:20:58 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.1.18:35766) with ID 2
+2018-11-05 04:20:58 INFO  YarnClientSchedulerBackend:54 - SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+2018-11-05 04:20:58 INFO  BlockManagerMasterEndpoint:54 - Registering block manager ip-10-1-1-18.ec2.internal:45569 with 413.9 MB RAM, BlockManagerId(2, ip-10-1-1-18.ec2.internal, 45569, None)
+2018-11-05 04:20:58 INFO  SharedState:54 - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/opt/spark/spark-warehouse/').
+2018-11-05 04:20:58 INFO  SharedState:54 - Warehouse path is 'file:/opt/spark/spark-warehouse/'.
+2018-11-05 04:20:58 INFO  JettyUtils:54 - Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL.
+2018-11-05 04:20:58 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5c8d58ed{/SQL,null,AVAILABLE,@Spark}
+2018-11-05 04:20:58 INFO  JettyUtils:54 - Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/json.
+2018-11-05 04:20:58 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@28be7fec{/SQL/json,null,AVAILABLE,@Spark}
+2018-11-05 04:20:58 INFO  JettyUtils:54 - Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/execution.
+2018-11-05 04:20:58 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4ce25e47{/SQL/execution,null,AVAILABLE,@Spark}
+2018-11-05 04:20:58 INFO  JettyUtils:54 - Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/execution/json.
+2018-11-05 04:20:58 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@350da119{/SQL/execution/json,null,AVAILABLE,@Spark}
+2018-11-05 04:20:58 INFO  JettyUtils:54 - Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /static/sql.
+2018-11-05 04:20:58 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2589d787{/static/sql,null,AVAILABLE,@Spark}
+2018-11-05 04:20:59 INFO  StateStoreCoordinatorRef:54 - Registered StateStoreCoordinator endpoint
+2018-11-05 04:21:00 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2018-11-05 04:21:00 INFO  FileSourceStrategy:54 - Post-Scan Filters: 
+2018-11-05 04:21:00 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2018-11-05 04:21:00 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2018-11-05 04:21:02 INFO  CodeGenerator:54 - Code generated in 743.279789 ms
+2018-11-05 04:21:02 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 278.4 KB, free 413.7 MB)
+2018-11-05 04:21:02 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 24.1 KB, free 413.6 MB)
+2018-11-05 04:21:02 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on ip-10-1-1-100.ec2.internal:41335 (size: 24.1 KB, free: 413.9 MB)
+2018-11-05 04:21:02 INFO  SparkContext:54 - Created broadcast 0 from javaRDD at JavaWordCount.java:45
+2018-11-05 04:21:02 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2018-11-05 04:21:03 INFO  SparkContext:54 - Starting job: collect at JavaWordCount.java:53
+2018-11-05 04:21:03 INFO  DAGScheduler:54 - Registering RDD 5 (mapToPair at JavaWordCount.java:49)
+2018-11-05 04:21:03 INFO  DAGScheduler:54 - Got job 0 (collect at JavaWordCount.java:53) with 1 output partitions
+2018-11-05 04:21:03 INFO  DAGScheduler:54 - Final stage: ResultStage 1 (collect at JavaWordCount.java:53)
+2018-11-05 04:21:03 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 0)
+2018-11-05 04:21:03 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 0)
+2018-11-05 04:21:03 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 0 (MapPartitionsRDD[5] at mapToPair at JavaWordCount.java:49), which has no missing parents
+2018-11-05 04:21:03 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 12.4 KB, free 413.6 MB)
+2018-11-05 04:21:03 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.4 KB, free 413.6 MB)
+2018-11-05 04:21:03 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on ip-10-1-1-100.ec2.internal:41335 (size: 6.4 KB, free: 413.9 MB)
+2018-11-05 04:21:03 INFO  SparkContext:54 - Created broadcast 1 from broadcast at DAGScheduler.scala:1039
+2018-11-05 04:21:03 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[5] at mapToPair at JavaWordCount.java:49) (first 15 tasks are for partitions Vector(0))
+2018-11-05 04:21:03 INFO  YarnScheduler:54 - Adding task set 0.0 with 1 tasks
+2018-11-05 04:21:03 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, ip-10-1-1-18.ec2.internal, executor 2, partition 0, RACK_LOCAL, 8311 bytes)
+2018-11-05 04:21:04 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on ip-10-1-1-18.ec2.internal:45569 (size: 6.4 KB, free: 413.9 MB)
+2018-11-05 04:21:06 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on ip-10-1-1-18.ec2.internal:45569 (size: 24.1 KB, free: 413.9 MB)
+2018-11-05 04:21:09 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 5560 ms on ip-10-1-1-18.ec2.internal (executor 2) (1/1)
+2018-11-05 04:21:09 INFO  YarnScheduler:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2018-11-05 04:21:09 INFO  DAGScheduler:54 - ShuffleMapStage 0 (mapToPair at JavaWordCount.java:49) finished in 5.809 s
+2018-11-05 04:21:09 INFO  DAGScheduler:54 - looking for newly runnable stages
+2018-11-05 04:21:09 INFO  DAGScheduler:54 - running: Set()
+2018-11-05 04:21:09 INFO  DAGScheduler:54 - waiting: Set(ResultStage 1)
+2018-11-05 04:21:09 INFO  DAGScheduler:54 - failed: Set()
+2018-11-05 04:21:09 INFO  DAGScheduler:54 - Submitting ResultStage 1 (ShuffledRDD[6] at reduceByKey at JavaWordCount.java:51), which has no missing parents
+2018-11-05 04:21:09 INFO  MemoryStore:54 - Block broadcast_2 stored as values in memory (estimated size 3.8 KB, free 413.6 MB)
+2018-11-05 04:21:09 INFO  MemoryStore:54 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.2 KB, free 413.6 MB)
+2018-11-05 04:21:09 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on ip-10-1-1-100.ec2.internal:41335 (size: 2.2 KB, free: 413.9 MB)
+2018-11-05 04:21:09 INFO  SparkContext:54 - Created broadcast 2 from broadcast at DAGScheduler.scala:1039
+2018-11-05 04:21:09 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 1 (ShuffledRDD[6] at reduceByKey at JavaWordCount.java:51) (first 15 tasks are for partitions Vector(0))
+2018-11-05 04:21:09 INFO  YarnScheduler:54 - Adding task set 1.0 with 1 tasks
+2018-11-05 04:21:09 INFO  TaskSetManager:54 - Starting task 0.0 in stage 1.0 (TID 1, ip-10-1-1-18.ec2.internal, executor 2, partition 0, NODE_LOCAL, 7660 bytes)
+2018-11-05 04:21:09 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on ip-10-1-1-18.ec2.internal:45569 (size: 2.2 KB, free: 413.9 MB)
+2018-11-05 04:21:09 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.1.1.18:35766
+2018-11-05 04:21:09 INFO  TaskSetManager:54 - Finished task 0.0 in stage 1.0 (TID 1) in 332 ms on ip-10-1-1-18.ec2.internal (executor 2) (1/1)
+2018-11-05 04:21:09 INFO  DAGScheduler:54 - ResultStage 1 (collect at JavaWordCount.java:53) finished in 0.360 s
+2018-11-05 04:21:09 INFO  YarnScheduler:54 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2018-11-05 04:21:09 INFO  DAGScheduler:54 - Job 0 finished: collect at JavaWordCount.java:53, took 6.356406 s
+Unless: 3
+agree: 1
+reproduce,: 1
+http://jline.sourceforge.net): 1
+(or: 3
+MERCHANTABILITY,: 1
+(https://github.com/typelevel/machinist): 1
+AnchorJS: 1
+However,: 1
+been: 2
+http://f2j.sourceforge.net): 1
+AntLR: 1
+appropriateness: 1
+direct,: 1
+harmless: 1
+9.: 1
+(org.scala-lang:scala-compiler:2.11.8: 1
+file: 6
+file.: 1
+are: 8
+2.: 1
+part: 4
+reproduction,: 3
+alone: 1
+different: 1
+grant: 1
+"[]": 1
+Zstd-jni: 1
+FITNESS: 1
+be: 5
+distribution,: 1
+carry: 1
+including: 5
+combination: 1
+license: 8
+JLine: 1
+Binding: 1
+"printed: 1
+but: 5
+malfunction,: 1
+stated: 2
+obligations,: 1
+5.: 1
+Works;: 3
+"Legal: 1
+make,: 1
+associated: 1
+Work: 20
+http://www.stringtemplate.org): 2
+whole,: 2
+copyright,: 1
+at: 4
+object: 1
+JPMML-Model: 1
+copy: 3
+indemnify,: 1
+class: 1
+behalf: 5
+"control": 1
+acting: 1
+"Object": 1
+Accepting: 1
+Kryo: 1
+give: 1
+except: 3
+"Work": 1
+project: 3
+authorized: 2
+https://github.com/scopt/scopt): 1
+granting: 1
+(com.github.fommil.netlib:core:1.1.2: 1
+(BSD: 14
+names: 1
+fields: 1
+transfer: 1
+(ii): 1
+JavaUtils.scala): 1
+licenses.: 1
+readable: 1
+management: 1
+marks,: 1
+(xmlenc:xmlenc:0.52: 1
+litigation: 2
+Library: 2
+(https://github.com/luben/zstd-jni/blob/master/LICENSE): 1
+configuration: 1
+(org.slf4j:jul-to-slf4j:1.7.5: 1
+(https://github.com/douban/dpark/blob/master/LICENSE): 1
+percent: 1
+this: 16
+limitations: 1
+ST4: 1
+Contributor,: 1
+PARTICULAR: 1
+appropriate: 1
+d3.min.js: 1
+http://github.com/szeiger/junit-interface/): 1
+1.: 1
+otherwise: 3
+Compiler: 2
+trademarks,: 1
+acceptance: 1
+sole: 1
+"AS: 2
+See: 6
+exercise: 1
+agreement: 1
+(org.spark-project:pyrolite:2.0.1: 1
+for: 23
+without: 3
+reproduce: 1
+cause: 2
+Subject: 2
+control: 2
+TERMS: 2
+made,: 1
+accepting: 2
+conditions:: 1
+sorttable: 1
+"submitted": 1
+http://www.scala-lang.org/): 5
+pyrolite: 1
+was: 1
+While: 1
+(Two-clause: 1
+do: 3
+language: 1
+entity: 3
+License: 9
+permissions: 3
+WARRANTIES: 2
+StringTemplate: 1
+Contributions.: 2
+How: 1
+(https://github.com/cloudpipe/cloudpickle/blob/master/LICENSE): 1
+(com.novocode:junit-interface:0.10: 1
+reasonable: 1
+made: 1
+bind: 1
+API: 3
+apply: 2
+http://www.slf4j.org): 4
+classes: 1
+(https://github.com/facebook/zstd/blob/v1.3.1/LICENSE): 1
+spire: 1
+one: 1
+counterclaim: 1
+discussing: 1
+in: 25
+3: 6
+(Interpreter: 1
+beneficial: 1
+(a): 1
+from: 3
+date: 1
+http://www.scalacheck.org): 1
+mustache: 1
+ParaNamer: 2
+.scala: 1
+managed: 1
+Source: 8
+remain: 1
+CONDITIONS: 4
+identification: 1
+BSD: 7
+display: 1
+REPRODUCTION,: 1
+: 1445
+translation: 1
+license/LICENSE-heapq.txt: 1
+license.: 1
+damages.: 1
+format.: 1
+designated: 1
+Contribution.": 1
+applicable: 3
+(https://github.com/mustache/mustache/blob/master/LICENSE): 1
+choose: 1
+SerializableMapWrapper: 1
+(MIT: 20
+6.: 1
+included: 4
+retain,: 1
+notice,: 1
+owner: 4
+details.: 2
+Contributions): 1
+(http://datatables.net/license): 1
+its: 3
+(50%): 1
+writing: 1
+document.: 1
+such: 17
+Contribution: 3
+components: 2
+distribute,: 2
+page": 1
+"Your"): 1
+JUL: 1
+additions: 1
+non-exclusive,: 2
+hereby: 2
+software: 2
+risks: 1
+bridge: 1
+IS": 2
+lists,: 1
+licence): 3
+fee: 1
+out: 1
+required: 4
+dagre-d3: 1
+unless: 1
+below).: 1
+ownership: 2
+========================================================================: 10
+import,: 1
+MinLog: 1
+(org.slf4j:slf4j-log4j12:1.7.5: 1
+terminate: 1
+if: 4
+prominent: 1
+revisions,: 1
+Apache: 6
+all: 3
+"License");: 1
+written: 1
+Warranty: 1
+irrevocable: 2
+inclusion: 2
+(http://code.google.com/p/cookies/wiki/License): 1
+Definitions.: 1
+Derivative: 17
+incurred: 1
+terms.: 1
+sell,: 2
+Actors: 1
+License): 29
+Work,: 4
+representatives,: 1
+special,: 1
+is: 11
+Legal: 3
+least: 1
+same: 1
+file,: 1
+text: 6
+editorial: 1
+(http://www.jqueryscript.net/other/jQuery-Plugin-For-Pretty-JSON-Formatting-jsonFormatter.html): 1
+redistributing: 2
+"License": 1
+link: 3
+notice: 2
+shall: 15
+using: 1
+and/or: 1
+separate: 2
+name): 1
+form.: 1
+annotations,: 1
+subject: 1
+negligent: 1
+defend,: 1
+files: 2
+Work.: 1
+(https://github.com/cpettitt/graphlib-dot): 1
+NOTICE: 5
+owner.: 1
+infringed: 1
+modifications: 3
+Clause): 7
+electronic,: 1
+brackets!): 1
+section): 1
+(https://github.com/mbostock/d3/blob/master/LICENSE): 1
+code: 2
+acts): 1
+scalacheck: 1
+product: 1
+warranty,: 1
+liable: 1
+(com.google.protobuf:protobuf-java:2.5.0: 1
+Disclaimer: 1
+represent,: 1
+Subcomponents:: 1
+Spark: 2
+(https://github.com/bryanbraun/anchorjs): 1
+(an: 1
+Works": 1
+"Licensor": 1
+"Derivative: 1
+library: 1
+A: 1
+incidental,: 1
+Java: 3
+Works: 12
+pertain: 2
+also: 3
+tort: 1
+conversions: 1
+liability: 2
+whether: 4
+Submission: 1
+TITLE,: 1
+thereof.: 1
+2.0: 1
+royalty-free,: 2
+entities: 1
+interfaces: 1
+or,: 1
+"Not: 1
+http://paranamer.codehaus.org/paranamer): 2
+contents: 1
+source: 3
+http://pythonhosted.org/Pyro4/): 1
+commercial: 1
+Works,: 2
+defined: 1
+https://github.com/EsotericSoftware/minlog): 1
+controlled: 1
+(pyspark/heapq3.py):: 1
+Warranty.: 1
+implemented: 1
+reason: 1
+improving: 1
+form,: 4
+SnapTree:: 1
+theory,: 1
+(c): 1
+applies: 1
+(BSD-like): 5
+perpetual,: 2
+owner]: 1
+JUnit-Interface: 1
+jquery: 1
+code,: 2
+specific: 1
+2004: 1
+Object: 4
+In: 1
+SparkHelper.scala: 1
+-: 33
+(BSD): 3
+those: 3
+easier: 1
+work,: 2
+http://wwww.antlr.org/): 1
+within: 8
+worldwide,: 2
+inability: 1
+you: 2
+cannot: 1
+negligence),: 1
+a: 21
+determining: 1
+writing,: 3
+(com.esotericsoftware:minlog:1.3.0: 1
+to: 42
+https://github.com/jpmml/jpmml-model): 1
+third-party: 2
+core: 1
+boto: 1
+complies: 1
+governing: 1
+where: 1
+liability.: 1
+License,: 6
+(com.esotericsoftware:kryo:3.0.3: 1
+copyright: 11
+compliance: 1
+subsequently: 1
+additional: 4
+Contributor: 8
+For: 6
+NON-INFRINGEMENT,: 1
+offer: 1
+event: 1
+"Contributor": 1
+Grant: 2
+license/LICENSE-jbcrypt.txt: 1
+work.: 1
+include: 3
+content: 1
+nothing: 1
+add: 2
+through: 1
+perform,: 1
+files;: 1
+result: 1
+goodwill,: 1
+herein: 1
+over: 1
+http://xmlenc.sourceforge.net): 1
+http://py4j.sourceforge.net/): 1
+To: 1
+any: 28
+contract,: 1
+ANY: 2
+contract: 1
+version: 1
+4.: 1
+these: 1
+sbt: 1
+MIT: 3
+[name: 1
+documentation,: 2
+(org.spark-project.protobuf:protobuf-java:2.4.1-shaded: 1
+control,: 1
+origin: 1
+no-charge,: 2
+indicated: 1
+recommend: 1
+purposes: 4
+wherever: 1
+necessarily: 1
+(https://github.com/cpettitt/dagre-d3): 1
+separable: 1
+contained: 1
+FOR: 2
+thereof,: 2
+(antlr:antlr:2.7.7: 1
+form: 8
+Patent: 1
+(org.antlr:stringtemplate:3.2.1: 1
+8.: 1
+constitutes: 1
+(org.antlr:ST4:4.0.4: 1
+types.: 1
+alongside: 1
+(org.antlr:antlr4:4.5.2-1: 1
+implied.: 1
+archives.: 1
+warranty: 1
+KIND,: 2
+Fortran: 1
+even: 1
+(https://jquery.org/license/): 1
+outstanding: 1
+Copyright: 2
+(org.scala-lang:scalap:2.11.8: 1
+asserted: 1
+We: 1
+4.5.2-1: 1
+responsible: 1
+attach: 1
+(org.scala-lang:scala-library:2.11.8: 1
+support,: 1
+has: 2
+may: 9
+New: 1
+=======================================================================: 1
+sublicense,: 1
+granted: 2
+blockUI: 1
+implied,: 1
+or: 62
+(https://github.com/stuartlangridge/sorttable): 1
+JCL: 1
+limitation,: 1
+licensable: 1
+Licensor,: 1
+(b): 1
+law: 3
+of: 65
+does: 1
+transformation: 1
+(org.jpmml:pmml-model:1.2.7: 1
+information.: 1
+shares,: 1
+modified: 1
+supersede: 1
+Licensed: 1
+places:: 1
+means: 2
+identifying: 1
+original: 2
+machinist: 1
+RowsGroup: 1
+against,: 1
+power,: 1
+"Source": 1
+each: 6
+indirect,: 2
+Liability.: 2
+following: 6
+"You": 1
+damages,: 1
+from): 1
+(https://github.com/boto/boto/blob/develop/LICENSE): 1
+tracking: 1
+http://www.mockito.org): 1
+obtain: 1
+alleging: 1
+(com.thoughtworks.paranamer:paranamer:2.3: 1
+source,: 1
+(iii): 1
+syntax: 1
+terms: 8
+compiled: 1
+example: 1
+incorporated: 2
+act: 1
+issue: 1
+provides: 2
+limited: 4
+license): 4
+http://spire-math.org): 2
+PURPOSE.: 1
+"Contribution": 1
+entity,: 1
+no: 2
+works: 1
+media: 1
+ARPACK: 1
+mean: 10
+individual: 3
+4.0.4: 1
+computer: 1
+Scala: 5
+Zstd: 1
+notices: 9
+agreed: 3
+Licensor: 8
+advised: 1
+authorship,: 2
+SLF4J: 4
+Module: 1
+subcomponents: 2
+(the: 1
+http://code.google.com/p/protobuf): 2
+distribute: 3
+modify: 2
+You: 23
+indemnity,: 1
+grants: 2
+(org.scala-lang:scala-reflect:2.11.8: 1
+brackets: 1
+modifying: 1
+meet: 1
+for,: 1
+reproducing: 1
+service: 1
+boilerplate: 1
+trademark,: 1
+infringement,: 1
+modernizr: 1
+http://www.antlr.org/): 1
+license/LICENSE-SnapTree.txt: 1
+warranties: 1
+Buffer: 2
+distributed: 3
+other: 7
+submitted: 2
+publicly: 2
+sbt-launch-lib.bash: 1
+OF: 3
+display,: 1
+derived: 1
+damages: 3
+use,: 4
+name: 1
+definition,: 2
+that: 22
+consistent: 1
+electronic: 1
+customary: 1
+thereof: 1
+claims: 2
+https://github.com/fommil/netlib-java/core): 1
+description: 1
+construed: 1
+trade: 1
+addendum: 1
+regarding: 1
+END: 1
+excluding: 3
+(d): 1
+License;: 1
+direct: 2
+modifications,: 3
+under: 11
+responsibility,: 1
+https://github.com/EsotericSoftware/kryo): 1
+The: 7
+legal: 1
+informational: 1
+intentionally: 2
+have: 2
+received: 1
+institute: 1
+Appendix: 1
+express: 2
+(except: 1
+loss: 1
+common: 1
+This: 1
+BSD-style: 3
+stating: 1
+resulting: 1
+(i): 1
+conditions.: 1
+marked: 1
+License.: 12
+whom: 1
+along: 1
+filed.: 1
+Sections: 1
+(https://github.com/Modernizr/Modernizr/blob/master/LICENSE): 1
+losses),: 1
+from,: 1
+names,: 1
+OR: 2
+DISTRIBUTION: 1
+the: 102
+verbal,: 1
+includes: 1
+offer,: 1
+obligations: 1
+licenses: 3
+assume: 1
+not: 11
+either: 2
+datatables: 1
+stoppage,: 1
+submitted.: 1
+provided: 7
+otherwise,: 3
+(net.sf.py4j:py4j:0.10.7: 1
+as: 15
+jsonFormatter: 1
+purpose: 2
+consequential: 1
+generated: 2
+licenses/LICENSE-[project].txt.: 2
+merely: 1
+AND: 3
+rights: 1
+(http://jquery.malsup.com/block/): 1
+http://www.apache.org/licenses/: 1
+(org.scala-lang:scala-actors:2.11.8: 1
+deliberate: 1
+Version: 2
+Main.Scala,: 1
+entity.: 2
+Scalap: 1
+(com.thoughtworks.paranamer:paranamer:2.6: 1
+Additional: 1
+conspicuously: 1
+charge: 1
+Parser: 1
+heapq: 1
+permission: 1
+on: 11
+(Don't: 1
+against: 1
+(org.slf4j:jcl-over-slf4j:1.7.5: 1
+Trademarks.: 1
+9: 1
+union: 1
+(and: 1
+1: 1
+including,: 1
+BASIS,: 2
+Entity: 3
+(http://www.scala-lang.org/download/#License): 1
+use: 6
+enclosed: 2
+[yyyy]: 1
+1.1.1: 1
+contains: 1
+jbcrypt:: 1
+Entity": 1
+cookies: 1
+xmlenc: 1
+preferred: 1
+(jline:jline:0.9.94: 1
+http://javolution.org): 1
+repl/src/main/scala: 1
+available: 1
+http://www.apache.org/licenses/LICENSE-2.0: 1
+conditions: 8
+LOG4J-12: 1
+more: 1
+(org.slf4j:slf4j-api:1.7.5: 1
+solely: 1
+graphlib-dot: 1
+possibility: 1
+direction: 1
+making: 1
+must: 4
+fifty: 1
+sent: 1
+netlib: 1
+(org.scalacheck:scalacheck_2.11:1.10.0: 1
+APPENDIX:: 1
+(org.spire-math:spire-macros_2.11:0.7.1: 1
+elaborations,: 1
+changed: 1
+prepare: 1
+describing: 1
+only: 4
+contributory: 1
+normally: 1
+scopt: 1
+exercising: 1
+WITHOUT: 2
+documentation: 1
+which: 2
+patent,: 1
+Javolution: 1
+3.: 1
+explicitly: 1
+should: 1
+Limitation: 1
+(org.spire-math:spire_2.11:0.7.1: 1
+Contribution(s): 3
+character: 1
+"NOTICE": 1
+of,: 3
+your: 4
+(net.sourceforge.f2j:arpack_combined_all:0.1: 1
+failure: 1
+recipients: 1
+communication: 3
+then: 2
+(including: 3
+Redistribution.: 1
+attribution: 4
+(all: 1
+by: 20
+If: 2
+an: 6
+own: 4
+submit: 1
+2.0,: 1
+(BSD-style): 3
+systems: 1
+patent: 5
+grossly: 1
+(New: 4
+above,: 1
+systems,: 1
+distribution: 3
+(The: 4
+7.: 1
+mailing: 1
+(org.mockito:mockito-core:1.9.5: 1
+Protocol: 2
+with: 12
+Notwithstanding: 1
+January: 1
+2: 1
+cross-claim: 1
+provide: 1
+(such: 1
+lawsuit): 1
+arising: 1
+based: 1
+ANTLR: 3
+Core: 2
+medium,: 1
+authorship.: 1
+files.: 1
+ExecutorClassLoader.scala),: 1
+copies: 1
+their: 2
+statement: 1
+(javolution:javolution:5.5.1: 1
+CloudPickle: 1
+work: 5
+state: 1
+by,: 3
+Mockito: 1
+attached: 1
+appear.: 1
+(com.github.scopt:scopt_2.11:3.2.0: 1
+Generator: 1
+Your: 9
+Py4J: 1
+(http://datatables.net/license/mit): 1
+spire-macros: 1
+hold: 1
+and: 46
+USE,: 1
+comment: 1
+DPark: 1
+replaced: 1
+mechanical: 1
+executed: 1
+2018-11-05 04:21:09 INFO  AbstractConnector:318 - Stopped Spark@4c9c96c8{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-11-05 04:21:09 INFO  SparkUI:54 - Stopped Spark web UI at http://ip-10-1-1-100.ec2.internal:4040
+2018-11-05 04:21:09 INFO  YarnClientSchedulerBackend:54 - Interrupting monitor thread
+2018-11-05 04:21:09 INFO  YarnClientSchedulerBackend:54 - Shutting down all executors
+2018-11-05 04:21:09 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Asking each executor to shut down
+2018-11-05 04:21:09 INFO  SchedulerExtensionServices:54 - Stopping SchedulerExtensionServices
+(serviceOption=None,
+ services=List(),
+ started=false)
+2018-11-05 04:21:09 INFO  YarnClientSchedulerBackend:54 - Stopped
+2018-11-05 04:21:09 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2018-11-05 04:21:09 INFO  MemoryStore:54 - MemoryStore cleared
+2018-11-05 04:21:09 INFO  BlockManager:54 - BlockManager stopped
+2018-11-05 04:21:09 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2018-11-05 04:21:09 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2018-11-05 04:21:09 INFO  SparkContext:54 - Successfully stopped SparkContext
+2018-11-05 04:21:09 INFO  ShutdownHookManager:54 - Shutdown hook called
+2018-11-05 04:21:09 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-871450ad-96e1-4c68-a76c-c15baf6d3787
+2018-11-05 04:21:09 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-4ab44b27-db63-44b2-a031-809f811ed47e
